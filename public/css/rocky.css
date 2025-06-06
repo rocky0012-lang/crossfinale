@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -81,7 +82,7 @@ html {
 }
 
 .feature-btn {
-  padding: 10px 24px;
+  padding: 1px 20px;
   font-size: 1rem;
   background-color: #fff;
   color: #1e3a8a;
@@ -97,6 +98,16 @@ html {
   color: #fff;
   transform: scale(1.05);
 }
+
+.passport-photo {
+  width: 150px;       /* Width of passport photo */
+  height: 150px;      /* Height of passport photo */
+  object-fit: cover;  /* Ensures image covers the area without distortion */
+  border-radius: 8px; /* Rounded corners, optional */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Optional shadow */
+  display: block;     /* Removes inline gaps */
+}
+
 
 /* Footer styles */
 .footer {
@@ -150,7 +161,7 @@ html {
     margin-bottom: 10px;
   }
 
-  .container {
+  .custom-container {
     padding: 20px;
     margin-top: 15px;
   }
