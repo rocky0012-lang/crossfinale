@@ -1,184 +1,205 @@
-/* Smooth scrolling behavior */
-html {
-  scroll-behavior: smooth;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
+.bg-gray-900 {
+  background-color: #1a1a1a;
+}
 
-/* Navbar styles */
+.text-white {
+  color: #ffffff;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(30, 30, 40, 0.3);        /* reduce opacity to show blur */
-  backdrop-filter: blur(10px);               /* blur behind navbar */
-  -webkit-backdrop-filter: blur(10px);       /* Safari support */
-  padding: 18px 40px;
-  border-radius: 20px;
-  margin: 30px auto 0 auto;
-  max-width: 2100px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  padding: 1rem;
+  background-color: #333;
 }
 
-
 .nav-links {
-  display: flex;
   list-style: none;
-  gap: 28px;
   padding: 0;
   margin: 0;
 }
 
-.left-links {
-  margin-right: auto;
-  gap: 40px;
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
 }
 
-.right-links {
-  margin-left: auto;
-  gap: 40px;
-}
-
-.navbar a {
-  color: #fff;
+.nav-links a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.08rem;
-  padding: 8px 18px;
-  border-radius: 12px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.navbar a:hover {
-  background: #ff69b4;
-  color: #fff;
+  color: #ffffff;
 }
 
 .logo {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #ff69b4;
-  padding: 0 30px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-weight: bold;
+  color: #ffffff;
 }
 
-.start-button {
-  padding: 14px 30px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #ff69b4;
-  border: 2px solid #ff69b4;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.shop {
+  padding: 20px;
 }
 
-.start-button:hover {
-  background-color: #ff69b4;
-  color: #fff;
-  transform: scale(1.05);
+.text-center {
+  text-align: center;
 }
 
-.feature-btn {
-  padding: 1px 20px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #1e3a8a;
-  border: 2px solid #1e3a8a;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
-  font-weight: 600;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.feature-btn:hover {
-  background-color: #1e3a8a;
-  color: #fff;
-  transform: scale(1.05);
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.shadow-2xl {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.max-w-5xl {
+  max-width: 80rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-pink-500 {
+  color: #d53f8c;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .passport-photo {
-  width: 150px;       /* Width of passport photo */
-  height: 150px;      /* Height of passport photo */
-  object-fit: cover;  /* Ensures image covers the area without distortion */
-  border-radius: 8px; /* Rounded corners, optional */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Optional shadow */
-  display: block;     /* Removes inline gaps */
+  width: 100%;
+  height: auto;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+}
 
-/* Footer styles */
+.font-bold {
+  font-weight: bold;
+}
+
+.text-pink-400 {
+  color: #f687b3;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.text-purple-400 {
+  color: #a855f7;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.feature-btn {
+  cursor: pointer;
+}
+
+.bg-pink-600 {
+  background-color: #d53f8c;
+}
+
+.hover\:bg-pink-700:hover {
+  background-color: #b83280;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
 .footer {
-  background: #181828;
-  color: #fff;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 24px 0;
   text-align: center;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 0 -2px 16px rgba(10, 10, 10, 0.15);
-}
-
-@media (max-width: 600px) {
-  /* Navbar becomes vertical and compact */
-  .navbar {
-    align-items: flex-start;
-    padding: 16px 20px;
-    margin: 0px;
-    border-radius: 0px;
-    display: flex;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    margin-top: 16px;
-  }
-
-  .left-links,
-  .right-links {
-    display: flex;
-    gap: 5px;
-    margin: 0;
-  }
-
-  .navbar a {
-    font-size: 1rem;
-    padding: 10px 12px;
-    display: block;
-    width: 100%;
-  }
-
-  .logo {
-    font-size: 1rem;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  .custom-container {
-    padding: 20px;
-    margin-top: 15px;
-  }
-  /* Start button and feature button adjustments */
-
-  .start-button,
-  .feature-btn {
-    padding: 12px 20px;
-    font-size: 0.95rem;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  /* Footer font adjustment */
-  .footer {
-    font-size: 0.95rem;
-    padding: 18px 10px;
-  }
+  padding: 1rem;
+  background-color: #333;
+  color: #ffffff;
 }
