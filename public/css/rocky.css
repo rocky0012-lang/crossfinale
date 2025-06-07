@@ -52,6 +52,10 @@ html {
   color: #fff;
 }
 
+.custom-container {
+  margin-top: -1rem; /* or 0 if you want it flush */
+}
+
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
