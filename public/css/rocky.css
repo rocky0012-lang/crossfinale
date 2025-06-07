@@ -116,7 +116,7 @@ html {
 .lang-button {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: blur (#1e3a8a, 0.5);
   color: white;
   border: none;
   border-radius: 5px;
