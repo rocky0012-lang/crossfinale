@@ -23,7 +23,12 @@
     </ul>
   </nav>
 </header>
-
+ <button class="lang-button" onclick="toggleDropdown()">🌐 Language</button>
+  <div class="lang-dropdown" id="languageMenu">
+    <div onclick="selectLanguage('Swahili')">Swahili</div>
+    <div onclick="selectLanguage('French')">French</div>
+    <div onclick="selectLanguage('Chinese')">Chinese</div>
+  </div>
     <main>
         <section id="home" class="hero">
             <div class="custom-container mx-auto bg-white bg-opacity-10 rounded-2xl p-16 flex flex-col items-center shadow-2xl max-w-4xl mt-16"
@@ -394,7 +399,7 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
         <p>&copy; 2023 Rocky's Boutique. All rights reserved.</p>
     </footer>
 
-    <script src="rocky.js"></script>
+    <script src="index.js"></script>
     
 </body>
 </html>

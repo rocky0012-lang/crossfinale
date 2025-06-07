@@ -113,6 +113,34 @@ html {
   box-shadow: 0 -2px 16px rgba(10, 10, 10, 0.15);
 }
 
+.lang-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.lang-dropdown div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lang-dropdown div:hover {
+  background-color: #f1f1f1;
+}
+
 @media (max-width: 600px) {
   /* Navbar becomes vertical and compact */
   .navbar {
